@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,122 +11,155 @@
 
 <body>
 
-<header>
-  <div class="top-bar">
-    <div class="nav-left">
-      <a href="homepage.html">
-        <img src="images/logo.png" alt="logo" class="logo">
-      </a>
-      <div class="stack">
-        <span class="site-title">FOOTBALL HUB</span>
-        <span class="page-name">HOMEPAGE</span>
+  <header>
+    <div class="top-bar">
+      <div class="nav-left">
+        <a href="homepage.html">
+          <img src="images/logo.png" alt="logo" class="logo">
+        </a>
+        <div class="stack">
+          <span class="site-title">FOOTBALL HUB</span>
+          <span class="page-name">HOMEPAGE</span>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <a href="join.html" class="join-link">JOIN NOW</a>
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
 
-    <div class="nav-right">
-      <a href="join.html" class="join-link">JOIN NOW</a>
-      <button class="hamburger" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+    <nav class="bottom-bar">
+      <ul class="nav-list">
+        <li class="dropdown">
+          <div class="dropdown-hover-area">
+            <button class="dropdown-button">CLUBS</button>
+            <div class="dropdown-content">
+              <div class="dropdown-inner">
+                <div class="grid-container">
+
+                  <a href="clubs.html">
+                    <img src="" alt="barcelona">
+                    <span>BARCELONA</span>
+                  </a>
+
+                  <a href="clubs.html">
+                    <img src="" alt="realmadrid">
+                    <span>REAL MADRID</span>
+                  </a>
+
+                  <a href="clubs.html">
+                    <img src="" alt="liverpool">
+                    <span>LIVERPOOL</span>
+                  </a>
+
+                  <a href="clubs.html">
+                    <img src="" alt="manunited">
+                    <span>MAN UNITED</span>
+                  </a>
+
+                  <a href="clubs.html">
+                    <img src="" alt="mancity">
+                    <span>MAN CITY</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BANNER -->
+  <div class="banner-box">
+    <img src="c:\Users\k9ede\Pictures\Screenshots\Screenshot 2026-07-02 235024.png" alt="football banner">
+    <div class="banner-text">
+      <h1>LIVE THE GAME</h1>
+      <p>Explore clubs, predict matchups, and join the football community.</p>
+      <a href="clubs.html" class="banner-button">EXPLORE CLUBS</a>
     </div>
   </div>
 
-  <nav class="bottom-bar">
-    <ul class="nav-list">
-      <li><a href="homepage.html" class="nav-button">HOME</a></li>
-      <li><a href="clubs.html" class="nav-button">CLUBS</a></li>
-      <li><a href="predictor.html" class="nav-button">PREDICTOR</a></li>
-      <li><a href="join.html" class="nav-button">JOIN</a></li>
-    </ul>
-  </nav>
-</header>
-
-<!-- BANNER -->
-<div class="banner-box">
-  <img src="c:\Users\k9ede\Pictures\Screenshots\Screenshot 2026-07-02 235024.png" alt="football banner">
-  <div class="banner-text">
-    <h1>LIVE THE GAME</h1>
-    <p>Explore clubs, predict matchups, and join the football community.</p>
-    <a href="clubs.html" class="banner-button">EXPLORE CLUBS</a>
-  </div>
-</div>
-
-<!-- QUICK BUTTONS -->
-<div class="button-row">
-  <a href="clubs.html" class="main-button">TOP CLUBS</a>
-  <a href="predictor.html" class="main-button">PREDICT MATCH</a>
-  <a href="join.html" class="main-button">JOIN COMMUNITY</a>
-</div>
-
-<!-- CLUB SECTION -->
-<div class="container">
-  <div class="featured-header">
-    <p class="section-title">FEATURED CLUBS</p>
-    <a href="clubs.html" class="more-link">VIEW MORE</a>
+  <!-- QUICK BUTTONS -->
+  <div class="button-row">
+    <a href="clubs.html" class="main-button">TOP CLUBS</a>
+    <a href="predictor.html" class="main-button">PREDICT MATCH</a>
+    <a href="join.html" class="main-button">JOIN COMMUNITY</a>
   </div>
 
-  <div class="club-row">
-    <a href="clubs.html" class="club-card">
-      <img src="images/clubs/mancity.jpg" alt="Manchester City">
-      <p>MANCHESTER CITY</p>
-    </a>
+  <!-- CLUB SECTION -->
+  <div class="container">
+    <div class="featured-header">
+      <p class="section-title">FEATURED CLUBS</p>
+      <a href="clubs.html" class="more-link">VIEW MORE</a>
+    </div>
 
-    <a href="clubs.html" class="club-card">
-      <img src="images/clubs/liverpool.jpg" alt="Liverpool">
-      <p>LIVERPOOL</p>
-    </a>
+    <div class="club-row">
+      <a href="clubs.html" class="club-card">
+        <img src="images/clubs/mancity.jpg" alt="Manchester City">
+        <p>MANCHESTER CITY</p>
+      </a>
 
-    <a href="clubs.html" class="club-card">
-      <img src="images/clubs/realmadrid.jpg" alt="Real Madrid">
-      <p>REAL MADRID</p>
-    </a>
+      <a href="clubs.html" class="club-card">
+        <img src="images/clubs/liverpool.jpg" alt="Liverpool">
+        <p>LIVERPOOL</p>
+      </a>
 
-    <a href="clubs.html" class="club-card">
-      <img src="images/clubs/barcelona.jpg" alt="Barcelona">
-      <p>BARCELONA</p>
-    </a>
+      <a href="clubs.html" class="club-card">
+        <img src="images/clubs/realmadrid.jpg" alt="Real Madrid">
+        <p>REAL MADRID</p>
+      </a>
+
+      <a href="clubs.html" class="club-card">
+        <img src="images/clubs/barcelona.jpg" alt="Barcelona">
+        <p>BARCELONA</p>
+      </a>
+    </div>
   </div>
-</div>
 
-<!-- SPOTLIGHT -->
-<div class="spotlight-box">
-  <div class="spotlight-image">
-    <img src="images/banner/rivalry.jpg" alt="football rivalry">
+  <!-- SPOTLIGHT -->
+  <div class="spotlight-box">
+    <div class="spotlight-image">
+      <img src="images/banner/rivalry.jpg" alt="football rivalry">
+    </div>
+    <div class="spotlight-text">
+      <p class="section-title">MATCH SPOTLIGHT</p>
+      <h2>BIG RIVALRIES. BIGGER PASSION.</h2>
+      <p>
+        Football is more than scores — it is history, identity, and unforgettable matchdays.
+      </p>
+      <a href="predictor.html" class="spotlight-button">TRY PREDICTOR</a>
+    </div>
   </div>
-  <div class="spotlight-text">
-    <p class="section-title">MATCH SPOTLIGHT</p>
-    <h2>BIG RIVALRIES. BIGGER PASSION.</h2>
-    <p>
-      Football is more than scores — it is history, identity, and unforgettable matchdays.
-    </p>
-    <a href="predictor.html" class="spotlight-button">TRY PREDICTOR</a>
-  </div>
-</div>
 
-<!-- VIDEO -->
-<div class="video-box">
-  <div class="video-text">
-    <p class="section-title">MATCHDAY HIGHLIGHTS</p>
-    <h2>WATCH THE ENERGY OF THE GAME</h2>
+  <!-- VIDEO -->
+  <div class="video-box">
+    <div class="video-text">
+      <p class="section-title">MATCHDAY HIGHLIGHTS</p>
+      <h2>WATCH THE ENERGY OF THE GAME</h2>
+    </div>
+    <div class="video-frame">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Football video" allowfullscreen></iframe>
+    </div>
   </div>
-  <div class="video-frame">
-    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Football video" allowfullscreen></iframe>
+
+  <!-- JOIN CTA -->
+  <div class="join-box">
+    <h2>BE PART OF THE FOOTBALL COMMUNITY</h2>
+    <p>Share your favourite club, discover new matchups, and connect with other fans.</p>
+    <a href="join.html" class="join-button">JOIN NOW</a>
   </div>
-</div>
 
-<!-- JOIN CTA -->
-<div class="join-box">
-  <h2>BE PART OF THE FOOTBALL COMMUNITY</h2>
-  <p>Share your favourite club, discover new matchups, and connect with other fans.</p>
-  <a href="join.html" class="join-button">JOIN NOW</a>
-</div>
-
-<!-- FOOTER -->
-<footer class="footer-bar">
-  <p>© 2026 Football Hub</p>
-</footer>
+  <!-- FOOTER -->
+  <footer class="footer-bar">
+    <p>© 2026 Football Hub</p>
+  </footer>
 
 </body>
+
 </html>
