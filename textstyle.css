@@ -188,7 +188,7 @@ body {
 .grid-container a {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 1px;
   width: 220px;
   height: 70px;
   padding: 10px 12px;
@@ -235,11 +235,6 @@ body {
   object-fit: contain;
   object-position: center;
   display: block;
-}
-
-.liverpool-logo {
-  width: 60px;
-  height: 60px;
 }
 
 .grid-container2 {
