@@ -188,7 +188,7 @@ body {
 .grid-container a {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   width: 220px;
   height: 70px;
   padding: 10px 12px;
@@ -211,10 +211,17 @@ body {
   grid-column: 2;
 }
 
+.club-logo-box img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
 .club-logo-box {
   width: 64px;
   height: 64px;
-  background: white;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -223,11 +230,17 @@ body {
 }
 
 .club-logo-box img {
-  width: 42px;
-  height: 42px;
+  width: 52px;
+  height: 52px;
   object-fit: contain;
+  object-position: center;
+  display: block;
 }
 
+.liverpool-logo {
+  width: 60px;
+  height: 60px;
+}
 
 .grid-container2 {
   display: grid;
