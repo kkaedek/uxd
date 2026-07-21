@@ -1,3 +1,4 @@
+<img width="462" height="280" alt="join us" src="https://github.com/user-attachments/assets/015b7720-c721-4b47-9f0c-1715ae16d2c9" />
 <img width="1254" height="1254" alt="logo" src="https://github.com/user-attachments/assets/218f55f4-4a5a-4626-b4f0-00ba42760d43" />
 <img width="980" height="980" alt="liverpool" src="https://github.com/user-attachments/assets/316f1f0f-af61-4655-a951-2cf4cc4458ca" />
 <img width="640" height="427" alt="realmadrid" src="https://github.com/user-attachments/assets/31bfc2d4-4594-4633-99da-0cb2ea3473e5" />
