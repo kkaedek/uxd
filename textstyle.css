@@ -60,20 +60,6 @@ body {
   color: #b8b8b8;
 }
 
-.join-link {
-  text-decoration: none;
-  color: #a6ff4d;
-  font-weight: bold;
-  border: 2px solid #a6ff4d;
-  padding: 10px 16px;
-  transition: 0.3s;
-}
-
-.join-link:hover {
-  background-color: #a6ff4d;
-  color: #0f0f10;
-}
-
 /* BOTTOM BAR */
 .bottom-bar {
   display: flex;
