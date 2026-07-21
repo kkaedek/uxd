@@ -248,6 +248,38 @@ body {
   object-fit: contain;
 }
 
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* You can change to 3 if needed */
+  gap: 30px;
+  justify-items: center;
+}
+
+.grid-container2 a {
+  display: block;
+  align-items: center;
+  gap: 15px;
+  width: 320px;
+  text-decoration: none;
+  color: #000;
+}
+
+.grid-container2 img {
+  width: 120px; 
+  height: 80px; 
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
+
+.grid-container2 span {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: left;
+}
+
 /* HAMBURGER */
 .hamburger {
   display: none;
