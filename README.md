@@ -6,4 +6,4 @@
 <img width="599" height="399" alt="prediction" src="https://github.com/user-attachments/assets/a1047787-dffb-4a72-b481-117809d7db89" />
 <img width="599" height="399" alt="featured" src="https://github.com/user-attachments/assets/662ad62a-1696-4535-a5c4-917113bf9df8" />
 <img width="663" height="394" alt="results" src="https://github.com/user-attachments/assets/64effb61-e180-406a-ae27-2c5a2a34d411" />
-<img width="2560" height="1600" alt="join us" src="https://github.com/user-attachments/assets/54f649ef-8a2c-4e4a-abab-368547668240" />
+<img width="639" height="360" alt="join us" src="https://github.com/user-attachments/assets/32f0d970-517f-4873-b53f-02d73a211de4" />
