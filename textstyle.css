@@ -266,8 +266,8 @@ body {
 }
 
 .grid-container2 img {
-  width: 120px; 
-  height: 80px; 
+  width: 250px; 
+  height: 170px; 
   object-fit: cover;
   display: block;
   flex-shrink: 0;
@@ -279,6 +279,16 @@ body {
   font-weight: bold;
   text-align: left;
 }
+
+.grid-container2 a:hover {
+  color: #a6ff4d;
+  transform: translateY(-2px);
+}
+
+.grid-container2 a:nth-child(5) {
+  grid-column: 2;
+}
+
 
 /* HAMBURGER */
 .hamburger {
