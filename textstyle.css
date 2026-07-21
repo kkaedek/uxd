@@ -60,12 +60,6 @@ body {
   color: #b8b8b8;
 }
 
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
 .join-link {
   text-decoration: none;
   color: #a6ff4d;
@@ -251,31 +245,28 @@ body {
 
 .grid-container2 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* You can change to 3 if needed */
+  grid-template-columns: repeat(1, 1fr); /* You can change to 3 if needed */
   gap: 30px;
-  justify-items: center;
+  justify-items: start;
 }
 
 .grid-container2 a {
   display: block;
-  align-items: center;
-  gap: 15px;
-  width: 320px;
   text-decoration: none;
   color: #000;
 }
 
 .grid-container2 img {
-  width: 250px; 
-  height: 170px; 
+  width: 400px; 
+  height: 200px; 
   object-fit: cover;
   display: block;
-  flex-shrink: 0;
 }
 
 .grid-container2 span {
   display: block;
-  font-size: 13px;
+  margin-top: 8px;
+  font-size: 14px;
   font-weight: bold;
   text-align: left;
 }
