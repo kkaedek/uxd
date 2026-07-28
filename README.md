@@ -3,7 +3,6 @@
 <img width="2100" height="2100" alt="man city png" src="https://github.com/user-attachments/assets/24a1fd7b-cd6b-4af7-864c-d953ac8a50f0" />
 <img width="3840" height="3895" alt="barcelona png" src="https://github.com/user-attachments/assets/db98dd2c-4bc4-4731-b1ad-a1c3b3092ab0" />
 <img width="370" height="500" alt="liverpool png" src="https://github.com/user-attachments/assets/d1dd7438-28de-4b08-9101-5ccf6dbf9b90" />
-
 <img width="678" height="452" alt="banner" src="https://github.com/user-attachments/assets/5a284313-448a-49ea-95b0-5fa986d673de" />
 <img width="860" height="567" alt="rivary" src="https://github.com/user-attachments/assets/de599f96-ca64-4ef0-9f5e-97bd12e3826b" />
 <img width="1254" height="1254" alt="logo" src="https://github.com/user-attachments/assets/218f55f4-4a5a-4626-b4f0-00ba42760d43" />
@@ -15,3 +14,7 @@
 <img width="599" height="399" alt="featured" src="https://github.com/user-attachments/assets/662ad62a-1696-4535-a5c4-917113bf9df8" />
 <img width="663" height="394" alt="results" src="https://github.com/user-attachments/assets/64effb61-e180-406a-ae27-2c5a2a34d411" />
 <img width="639" height="360" alt="join us" src="https://github.com/user-attachments/assets/32f0d970-517f-4873-b53f-02d73a211de4" />
+<img width="679" height="452" alt="manu vs liverpool" src="https://github.com/user-attachments/assets/bf8de3df-4b16-421b-82ce-6dbca32e6308" />
+<img width="682" height="450" alt="liverpool vs mancity" src="https://github.com/user-attachments/assets/275fc951-7705-4af8-862a-4effbf3cdbf3" />
+<img width="1080" height="722" alt="spotlight" src="https://github.com/user-attachments/assets/c303d49c-4e5d-4d05-ad52-d5a1906cd0c5" />
+<img width="5061" height="3374" alt="realmadrid vs barcelona" src="https://github.com/user-attachments/assets/8ad47823-7347-4713-bc97-b2d8259a3e58" />
