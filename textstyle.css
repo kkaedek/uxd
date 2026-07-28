@@ -759,6 +759,15 @@ html {
   color: black;
 }
 
+.hero-buttons-submit .btn {
+  padding: 7px 14px;
+  font-weight: 600;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #a6ff4d;
+  color: black;
+}
+
 .btn-main {
   background: var(--accent);
   border: none;

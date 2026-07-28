@@ -17,7 +17,7 @@
 
 <body>
 
-    <header>
+       <header>
         <div class="top-bar">
             <div class="nav-left">
                 <a href="homepage.html">
@@ -26,15 +26,17 @@
                 </a>
                 <div class="stack">
                     <span class="site-title">FOOTBALL HUB</span>
-                    <span class="page-name">HOMEPAGE</span>
+                    <span class="page-name">PREDICTIONS</span>
                 </div>
             </div>
 
-            <span></span>
-            <span></span>
-            <span></span>
-            </button>
-        </div>
+            <div class="top-right">
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
 
         <nav class="bottom-bar">
@@ -45,7 +47,6 @@
                         <div class="dropdown-content">
                             <div class="dropdown-inner">
                                 <div class="grid-container">
-
                                     <a href="barca.html">
                                         <div class="club-logo-box">
                                             <img src="https://github.com/user-attachments/assets/db98dd2c-4bc4-4731-b1ad-a1c3b3092ab0"
@@ -96,12 +97,25 @@
                         <button class="dropdown-button">PREDICTION</button>
                         <div class="dropdown-content">
                             <div class="dropdown-inner">
-                                <div class="grid-container2">
+                                <div class="prediction-nav-grid">
+                                    <a href="predictor.html#predictions" class="prediction-nav-link">
+                                        <img src="images/prediction-nav/predictions.jpg" alt="today predictions">
+                                        <span>TODAY'S PREDICTIONS</span>
+                                    </a>
 
-                                    <a href="predictions.html">
-                                        <img src="https://github.com/user-attachments/assets/662ad62a-1696-4535-a5c4-917113bf9df8"
-                                            alt="today">
-                                        <span>PREDICTIONS</span>
+                                    <a href="predictor.html#featured-match" class="prediction-nav-link">
+                                        <img src="images/prediction-nav/featured.jpg" alt="featured match">
+                                        <span>FEATURED MATCH</span>
+                                    </a>
+
+                                    <a href="predictor.html#results" class="prediction-nav-link">
+                                        <img src="images/prediction-nav/results.jpg" alt="recent results">
+                                        <span>RECENT RESULTS</span>
+                                    </a>
+
+                                    <a href="predictor.html#fan-form" class="prediction-nav-link">
+                                        <img src="images/prediction-nav/form.jpg" alt="share your prediction">
+                                        <span>SHARE YOUR PREDICTION</span>
                                     </a>
                                 </div>
                             </div>
@@ -115,7 +129,6 @@
                         <div class="dropdown-content">
                             <div class="dropdown-inner">
                                 <div class="grid-container2">
-
                                     <a href="join.html">
                                         <img src="https://github.com/user-attachments/assets/32f0d970-517f-4873-b53f-02d73a211de4"
                                             alt="join">
@@ -129,6 +142,7 @@
             </ul>
         </nav>
     </header>
+    
     <div class="hero-banner">
 
         <div class="hero-overlay">
@@ -238,6 +252,36 @@
     <footer class="footer-bar">
         <p>© 2026 Football Hub</p>
     </footer>
+
+    <script>
+        const predictionLinks = document.querySelectorAll(".prediction-nav-link");
+        const dropdowns = document.querySelectorAll(".dropdown");
+        const bottomBar = document.querySelector(".bottom-bar");
+
+        predictionLinks.forEach((link) => {
+            link.addEventListener("click", function () {
+                const currentDropdown = this.closest(".dropdown");
+
+                if (currentDropdown) {
+                    currentDropdown.classList.add("force-hide");
+                }
+
+                dropdowns.forEach((dropdown) => {
+                    dropdown.classList.remove("active");
+                });
+
+                if (bottomBar) {
+                    bottomBar.classList.remove("active");
+                }
+
+                setTimeout(() => {
+                    if (currentDropdown) {
+                        currentDropdown.classList.remove("force-hide");
+                    }
+                }, 600);
+            });
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
