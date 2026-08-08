@@ -144,14 +144,33 @@
 
 
   <!-- BANNER -->
-  <div class="banner-box">
-    <img src="https://github.com/user-attachments/assets/5a284313-448a-49ea-95b0-5fa986d673de" alt="football banner">
-    <div class="banner-text">
-      <h1>LIVE THE GAME</h1>
-      <p>Explore clubs, predict matchups, and join the football community.</p>
-      <a href="clubs.html" class="banner-button">EXPLORE CLUBS</a>
+<div class="banner-box">
+    <div class="banner-slide fade">
+        <img src="images/banner/banner1.jpg" alt="Football stadium crowd">
     </div>
-  </div>
+
+    <div class="banner-slide fade">
+        <img src="https://github.com/user-attachments/assets/5a284313-448a-49ea-95b0-5fa986d673de" alt="Football players in action">
+    </div>
+
+    <div class="banner-slide fade">
+        <img src="images/banner/banner3.jpg" alt="Fans celebrating a football match">
+    </div>
+
+    <div class="banner-slide fade">
+        <img src="images/banner/banner4.jpg" alt="Football match atmosphere">
+    </div>
+
+    <div class="banner-slide fade">
+        <img src="images/banner/banner5.jpg" alt="Night football stadium lights">
+    </div>
+
+    <div class="banner-text">
+        <h1>LIVE THE GAME</h1>
+        <p>Explore clubs, predict matchups, and join the football community.</p>
+        <a href="clubs.html" class="banner-button">EXPLORE CLUBS</a>
+    </div>
+</div>
 
   <!-- QUICK BUTTONS -->
   <div class="button-row">
@@ -272,6 +291,26 @@
   </footer>
   
      <script>
+
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let slides = document.getElementsByClassName("banner-slide");
+
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000);
+  }
+
   const predictionLinks = document.querySelectorAll(".prediction-nav-link");
   const dropdowns = document.querySelectorAll(".dropdown");
   const bottomBar = document.querySelector(".bottom-bar");

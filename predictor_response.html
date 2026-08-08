@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prediction Submitted | Football Hub</title>
+  <link rel="stylesheet" href="textstyle.css">
+</head>
+<body>
+  <section class="response-page">
+    <div class="response-box">
+      <h1>Prediction Submitted</h1>
+      <p>Your football prediction has been submitted successfully.</p>
+
+      <div class="prediction-summary">
+        <div class="summary-row">
+          <span class="summary-label">Name:</span>
+          <span id="displayName"></span>
+        </div>
+
+        <div class="summary-row">
+          <span class="summary-label">Match:</span>
+          <span id="displayMatch"></span>
+        </div>
+
+        <div class="summary-row">
+          <span class="summary-label">Home Score:</span>
+          <span id="displayHomeScore"></span>
+        </div>
+
+        <div class="summary-row">
+          <span class="summary-label">Away Score:</span>
+          <span id="displayAwayScore"></span>
+        </div>
+      </div>
+
+      <div class="response-buttons">
+        <a href="predictor.html#fan-form" class="response-btn secondary">Submit Another Prediction</a>
+        <a href="homepage.html" class="response-btn primary">Back to Homepage</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+
+    document.getElementById("displayName").textContent =
+      params.get("fanName") || "Not provided";
+
+    document.getElementById("displayMatch").textContent =
+      params.get("matchChoice") || "Not provided";
+
+    document.getElementById("displayHomeScore").textContent =
+      params.get("homeScore") || "Not provided";
+
+    document.getElementById("displayAwayScore").textContent =
+      params.get("awayScore") || "Not provided";
+  </script>
+</body>
+</html>
