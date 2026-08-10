@@ -239,7 +239,8 @@ body {
 
 .grid-container2 {
   display: grid;
-  grid-template-columns: repeat(1, 1fr); /* You can change to 3 if needed */
+  grid-template-columns: repeat(1, 1fr);
+  /* You can change to 3 if needed */
   gap: 30px;
   justify-items: start;
 }
@@ -251,8 +252,8 @@ body {
 }
 
 .grid-container2 img {
-  width: 400px; 
-  height: 200px; 
+  width: 400px;
+  height: 200px;
   object-fit: cover;
   display: block;
 }
@@ -274,41 +275,76 @@ body {
   grid-column: 2;
 }
 
+.prediction-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
 
+.prediction-nav-link {
+  display: block;
+  width: 230px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #171717;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
 
+.prediction-nav-link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+  border-color: #a6ff4d;
+}
+
+.prediction-nav-link img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+}
+
+.prediction-nav-link span {
+  display: block;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 800;
+  text-align: left;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
 
 
 /* eldricks css part */
 
 
 
+.club-page-logo {
+  width: 70px;
+  height: 70px;
+}
 
+.club-page-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-size: 3.5em;
+}
 
-
- 
-  .club-page-logo {
-    width: 70px;
-    height: 70px;
-  }
-  
-  .club-page-name{
-    display: flex;
-    justify-content: center;  
-    align-items: center;       
-    padding-top: 50px;
-    padding-bottom: 30px;
-    font-size: 3.5em;
-  }
-
-  .trophy-section {
+.trophy-section {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   font-size: 2em;
   color: white;
   margin-top: 40px;
-  text-align: left; 
+  text-align: left;
 }
 
 .trophy-section div {
@@ -317,91 +353,93 @@ body {
   margin: 15px 0;
   gap: 10px;
 }
+
 .trophy-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .trophy-list li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
 }
 
-.club-info{
-    width: 90%;
-    max-width: 1100px;
-    margin: 50px auto;
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    background-color: #171717;
-    border: 2px solid #2c2c2c;
-    border-radius: 12px;
-    padding: 30px;
+.club-info {
+  width: 90%;
+  max-width: 1100px;
+  margin: 50px auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  background-color: #171717;
+  border: 2px solid #2c2c2c;
+  border-radius: 12px;
+  padding: 30px;
 }
 
-.club-image img{
-    width: 250px;
-    height: 250px;
-    object-fit: contain;
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
+.club-image img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-.club-details{
-    flex: 1;
+.club-details {
+  flex: 1;
 }
 
-.club-details h2{
-    color: white;
-    margin-bottom: 20px;
-    font-size: 2rem;
+.club-details h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 2rem;
 }
 
-.club-details table{
-    width: 100%;
-    border-collapse: collapse;
+.club-details table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .club-details th,
-.club-details td{
-    padding: 15px;
-    border-bottom: 1px solid #333;
-    text-align: left;
-    vertical-align: top;
+.club-details td {
+  padding: 15px;
+  border-bottom: 1px solid #333;
+  text-align: left;
+  vertical-align: top;
 }
 
-.club-details th{
-    width: 180px;
-    color: white;
+.club-details th {
+  width: 180px;
+  color: white;
 }
 
-.club-details td{
-    color: white;
+.club-details td {
+  color: white;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    .club-info{
-        flex-direction: column;
-        text-align: center;
-    }
+  .club-info {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .club-details th,
-    .club-details td{
-        display: block;
-        width: 100%;
-    }
+  .club-details th,
+  .club-details td {
+    display: block;
+    width: 100%;
+  }
 
-    .club-details th{
-        padding-bottom: 5px;
-    }
+  .club-details th {
+    padding-bottom: 5px;
+  }
 }
+
 /* FOOTER */
 .footer-bar {
   background-color: #171717;
@@ -426,6 +464,7 @@ body {
 .footer-links a:hover {
   color: #ffffff;
 }
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .hamburger {
@@ -531,405 +570,826 @@ body {
   }
 }
 
-.trophy-grid{
-padding-top: 40px;
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
-width:58%;
-margin:auto;
+.trophy-grid {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  width: 58%;
+  margin: auto;
 
 }
 
-.trophy-card{
+.trophy-card {
 
-background:#181818;
-padding:30px;
-border-radius:15px;
-text-align:center;
-box-shadow:0 10px 25px rgba(0,0,0,.3);
+  background: #181818;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .3);
 
 }
 
-.trophy-card h2{
-font-size:50px;
+.trophy-card h2 {
+  font-size: 50px;
 }
 
 
 /* herobanner */
 
 
-.hero-banner{
-    height:420px;
-    position:relative;
-    overflow:hidden;
+.hero-banner {
+  height: 420px;
+  position: relative;
+  overflow: hidden;
 }
 
-.hero-background{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:0;
+.hero-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
-.hero-logo{
-    width:140px;
-    height:auto;
-    position:relative;
-    z-index:2;
+.hero-logo {
+  width: 140px;
+  height: auto;
+  position: relative;
+  z-index: 2;
 }
 
-.hero-overlay{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,.3);
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .3);
 
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    z-index:1;
+  z-index: 1;
 }
 
 
-.hero-overlay h1{
+.hero-overlay h1 {
 
-    font-size:60px;
-    font-weight:bold;
+  font-size: 60px;
+  font-weight: bold;
 }
 
-.hero-overlay p{
+.hero-overlay p {
 
-    font-size:24px;
-    color:#ddd;
+  font-size: 24px;
+  color: #ddd;
 }
 
-.trophy-card{
-    position: relative;
-    overflow: hidden;
-} 
+.trophy-card {
+  position: relative;
+  overflow: hidden;
+}
 
-.trophy-bg{
-    position: absolute;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    top:0;
-    left:0;
-    opacity:0.55;
+.trophy-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  opacity: 0.55;
 }
 
 .trophy-card h2,
-.trophy-card p{
-    position:relative;
-    z-index:1;
+.trophy-card p {
+  position: relative;
+  z-index: 1;
 }
 
-.club-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 35px ;
-    padding-bottom: 35px;
+.club-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
-.club-text{
+.about-club-image a img {
+  transition: 0.3s;
+  cursor: pointer;
+}
 
-    flex:1;
+.about-club-image a img:hover {
+  transform: scale(1.03);
+  opacity: 0.85;
+}
+
+.club-text {
+
+  flex: 1;
 
 }
 
-.club-text h1{
+.club-text h1 {
 
-    font-size:5rem;
+  font-size: 5rem;
 
-    font-weight:900;
+  font-weight: 900;
 
-    color:white;
+  color: white;
 
-    margin-bottom:40px;
+  margin-bottom: 40px;
+
+}
+
+.club-text p {
+
+  font-size: 1.2rem;
+
+  line-height: 1.8;
+
+  color: #ececec;
+
+  max-width: 500px;
 
 }
 
-.club-text p{
-
-    font-size:1.2rem;
-
-    line-height:1.8;
-
-    color:#ececec;
-
-    max-width:500px;
-
-}
-.about-club-image{
-    flex:1;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.about-club-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.about-club-image img{
-    width:600px;
-    height:400px;
-    object-fit:cover;
-    border-radius:20px;
-    display:block;
+.about-club-image img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
 }
 
 /* Scroll Animation */
 
 .club-section {
-    opacity: 0;
-    transform: translateY(80px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .club-section.show {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.trophy-card{
-    opacity:0;
-    transform:translateY(60px);
-    transition:0.8s ease;
+.trophy-card {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: 0.8s ease;
 }
 
-.trophy-card.show{
-    opacity:1;
-    transform:translateY(0);
+.trophy-card.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* CLUBS chooserr page */
 
 
-.clubs-list{
-    max-width:900px;
-    margin:60px auto;
-    display:flex;
-    flex-direction:column;
-    gap:20px;
+.clubs-list {
+  max-width: 900px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.club-button{
-    display:flex;
-    align-items:center;
-    gap:25px;
-    background:#1b1b1b;
-    border:2px solid #2d2d2d;
-    border-radius:5px;
-    padding:20px 30px;
-    color:white;
-    text-decoration:none;
-    transition:0.3s;
+.club-button {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background: #1b1b1b;
+  border: 2px solid #2d2d2d;
+  border-radius: 5px;
+  padding: 20px 30px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-.club-button img{
-    width:70px;
-    height:70px;
-    object-fit:contain;
+.club-button img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
 }
 
-.club-button span{
-    font-size:24px;
-    font-weight:bold;
+.club-button span {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.club-button:hover{
-    color:#a6ff4d;
-    transform:translateY(-4px);
-    filter:brightness(1.15);
+.club-button:hover {
+  color: #a6ff4d;
+  transform: translateY(-4px);
+  filter: brightness(1.15);
 }
 
-.club-button::after{
-    content:"➜";
-    margin-left:auto;
-    font-size:26px;
-    color:#a6ff4d;
+.club-button::after {
+  content: "➜";
+  margin-left: auto;
+  font-size: 26px;
+  color: #a6ff4d;
 }
 
-.barcelona{
-    background: linear-gradient(to right, #004D98, #A50044);
-}
-
-.realmadrid{
-    background: linear-gradient(to right, #E6E6E6, #D4AF37);
-    color: #111;
-}
-
-.liverpool{
-    background: linear-gradient(to right, #00B2A9, #8B0000);
-}
-
-.manutd{
-    background: linear-gradient(to right, #DA291C, #FBE122);
-    color: #111;
-}
-
-.mancity{
-    background: linear-gradient(to right, #d8d8d8, #6CABDD);
-}
 /* CONTACT PAGE */
 
-.contact-container{
-    width:90%;
-    max-width:850px;
-    margin:60px auto;
-    background:#171717;
-    padding:40px;
-    border-radius:15px;
-    border:1px solid #2c2c2c;
+.contact-container {
+  width: 90%;
+  max-width: 850px;
+  margin: 60px auto;
+  background: #171717;
+  padding: 40px;
+  border-radius: 15px;
+  border: 1px solid #2c2c2c;
 }
 
-.contact-container h1{
-    color:#a6ff4d;
-    text-align:center;
-    margin-bottom:10px;
+.contact-container h1 {
+  color: #a6ff4d;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.contact-container p{
-    text-align:center;
-    color:#b8b8b8;
-    margin-bottom:25px;
+.contact-container p {
+  text-align: center;
+  color: #b8b8b8;
+  margin-bottom: 25px;
 }
 
-#contactForm{
-    display:flex;
-    flex-direction:column;
+#contactForm {
+  display: flex;
+  flex-direction: column;
 }
 
-#contactForm label{
-    margin-top:18px;
-    margin-bottom:8px;
-    font-weight:bold;
-    color:white;
+#contactForm label {
+  margin-top: 18px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: white;
 }
 
 #contactForm input,
 #contactForm select,
-#contactForm textarea{
+#contactForm textarea {
 
-    background:#232323;
-    color:white;
-    border:1px solid #333;
-    padding:12px;
-    border-radius:8px;
+  background: #232323;
+  color: white;
+  border: 1px solid #333;
+  padding: 12px;
+  border-radius: 8px;
 
 }
 
 #contactForm input:focus,
 #contactForm select:focus,
-#contactForm textarea:focus{
+#contactForm textarea:focus {
 
-    outline:none;
-    border-color:#a6ff4d;
-
-}
-
-#contactForm button{
-
-    margin-top:25px;
-    padding:14px;
-    border:none;
-    background:#a6ff4d;
-    color:black;
-    font-weight:bold;
-    border-radius:8px;
-    transition:.3s;
+  outline: none;
+  border-color: #a6ff4d;
 
 }
 
-#contactForm button:hover{
+#contactForm button {
 
-    background:#87dd39;
-    transform:translateY(-2px);
+  margin-top: 25px;
+  padding: 14px;
+  border: none;
+  background: #a6ff4d;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: .3s;
 
 }
 
-.error{
+#contactForm button:hover {
 
-    color:#ff5c5c;
-    font-size:14px;
+  background: #87dd39;
+  transform: translateY(-2px);
 
 }
 
-#counter{
+.error {
 
-    text-align:right;
-    margin-top:5px;
-    color:#999;
+  color: #ff5c5c;
+  font-size: 14px;
+
+}
+
+#counter {
+
+  text-align: right;
+  margin-top: 5px;
+  color: #999;
 
 }
 
 /* RESPONSE PAGE */
 
-.response-box{
+.response-box {
 
-    width:90%;
-    max-width:700px;
-    margin:80px auto;
-    background:#171717;
-    border:1px solid #2c2c2c;
-    border-radius:12px;
-    padding:40px;
-
-}
-
-.response-box h1{
-
-    text-align:center;
-    color:#a6ff4d;
-    margin-bottom:15px;
+  width: 90%;
+  max-width: 700px;
+  margin: 80px auto;
+  background: #171717;
+  border: 1px solid #2c2c2c;
+  border-radius: 12px;
+  padding: 40px;
 
 }
 
-.response-box p{
+.response-box h1 {
 
-    color:white;
-    margin:18px 0;
-    font-size:18px;
-
-}
-
-.response-box strong{
-
-    color:#a6ff4d;
+  text-align: center;
+  color: #a6ff4d;
+  margin-bottom: 15px;
 
 }
 
-.button-container{
+.response-box p {
 
-    text-align:center;
-    margin-top:30px;
-
-}
-
-.home-button{
-
-    display:inline-block;
-    background:#a6ff4d;
-    color:black;
-    text-decoration:none;
-    padding:14px 24px;
-    border-radius:8px;
-    font-weight:bold;
-    transition:.3s;
+  color: white;
+  margin: 18px 0;
+  font-size: 18px;
 
 }
 
-.home-button:hover{
+.response-box strong {
 
-    background:#87dd39;
+  color: #a6ff4d;
 
+}
+
+.button-container {
+
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.home-button {
+
+  display: inline-block;
+  background: #a6ff4d;
+  color: black;
+  text-decoration: none;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: .3s;
+
+}
+
+.home-button:hover {
+
+  background: #87dd39;
+
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ADD THIS AT THE BOTTOM OF eldrickcss.css
+========================================= */
+
+
+/* ---------- TABLETS ---------- */
+@media (max-width: 900px) {
+
+  /* HEADER */
+  .top-bar {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .site-title {
+    font-size: 20px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* NAVIGATION */
+  .bottom-bar {
+    display: none;
+    top: 80px;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .bottom-bar.active {
+    display: flex;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .dropdown-button {
+    transform: none;
+  }
+
+
+  /* NAV DROPDOWNS */
+  .dropdown-content {
+    position: static;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .dropdown-inner {
+    padding: 0 20px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  .grid-container a {
+    width: 100%;
+  }
+
+  .grid-container a:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .prediction-nav-grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  .prediction-nav-link {
+    width: 100%;
+  }
+
+
+  /* HERO BANNER */
+  .hero-banner {
+    height: 350px;
+  }
+
+  .hero-logo {
+    width: 110px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .hero-overlay p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+
+  /* CLUB INFORMATION SECTIONS */
+  .club-section {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 25px;
+    text-align: center;
+  }
+
+  .club-text {
+    width: 100%;
+  }
+
+  .club-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+
+  .club-text p {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .about-club-image {
+    width: 100%;
+  }
+
+  .about-club-image img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    aspect-ratio: 3 / 2;
+  }
+
+
+  /* TROPHIES */
+  .trophy-grid {
+    width: 85%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  /* CLUB CHOOSER */
+  .clubs-list {
+    width: 90%;
+  }
+
+
+  /* CONTACT PAGE */
+  .contact-container {
+    width: 90%;
+    padding: 30px;
+  }
+}
+
+
+/* ---------- PHONES ---------- */
+@media (max-width: 600px) {
+
+  body {
+    padding-top: 80px;
+  }
+
+
+  /* HEADER */
+  .top-bar {
+    padding: 12px 15px;
+  }
+
+  .logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .nav-left {
+    gap: 10px;
+  }
+
+  .site-title {
+    font-size: 17px;
+  }
+
+  .page-name {
+    display: none;
+  }
+
+
+  /* MOBILE NAV */
+  .bottom-bar {
+    top: 69px;
+  }
+
+  .nav-list {
+    gap: 10px;
+  }
+
+  .dropdown-button {
+    font-size: 15px;
+  }
+
+
+  /* CLUB DROPDOWN */
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .grid-container a {
+    width: 100%;
+    height: 65px;
+  }
+
+  .club-logo-box {
+    width: 50px;
+    height: 50px;
+  }
+
+  .club-logo-box img {
+    width: 42px;
+    height: 42px;
+  }
+
+
+  /* PREDICTION DROPDOWN */
+  .prediction-nav-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .prediction-nav-link {
+    width: 100%;
+  }
+
+
+  /* HERO */
+  .hero-banner {
+    height: 280px;
+  }
+
+  .hero-logo {
+    width: 85px;
+  }
+
+  .hero-overlay {
+    padding: 20px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .hero-overlay p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+
+  /* CLUB SECTIONS */
+  .club-section {
+    width: 100%;
+    flex-direction: column;
+    padding: 35px 20px;
+    gap: 25px;
+  }
+
+  .club-text {
+    width: 100%;
+  }
+
+  .club-text h1 {
+    font-size: 2.6rem;
+    margin-bottom: 18px;
+  }
+
+  .club-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  .about-club-image {
+    width: 100%;
+  }
+
+  .about-club-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    border-radius: 12px;
+  }
+
+
+  /* TROPHY CARDS */
+  .trophy-grid {
+    width: 90%;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .trophy-card {
+    padding: 25px 15px;
+  }
+
+  .trophy-card h2 {
+    font-size: 40px;
+  }
+
+
+  /* CLUB INFORMATION */
+  .club-info {
+    width: 90%;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .club-image img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .club-details h2 {
+    font-size: 1.6rem;
+  }
+
+
+  /* CLUB CHOOSER */
+  .clubs-list {
+    width: 90%;
+    margin: 35px auto;
+    gap: 15px;
+  }
+
+  .club-button {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .club-button img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .club-button span {
+    font-size: 18px;
+  }
+
+  .club-button::after {
+    font-size: 20px;
+  }
+
+
+  /* CONTACT FORM */
+  .contact-container {
+    width: 92%;
+    margin: 35px auto;
+    padding: 25px 18px;
+  }
+
+  .contact-container h1 {
+    font-size: 28px;
+  }
+
+
+  /* RESPONSE PAGE */
+  .response-box {
+    width: 92%;
+    margin: 40px auto;
+    padding: 25px 18px;
+  }
+
+  .response-box h1 {
+    font-size: 28px;
+  }
+
+  .response-box p {
+    font-size: 16px;
+  }
+
+
+  /* FOOTER */
+  .footer-bar {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 15px;
+    gap: 12px;
+  }
+
+  .footer-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+
+/* ---------- VERY SMALL PHONES ---------- */
+@media (max-width: 400px) {
+
+  .site-title {
+    font-size: 15px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 27px;
+  }
+
+  .hero-overlay p {
+    font-size: 14px;
+  }
+
+  .club-text h1 {
+    font-size: 2.1rem;
+  }
+
+  .club-text p {
+    font-size: 0.95rem;
+  }
+
+  .club-button span {
+    font-size: 16px;
+  }
+
+  .club-button img {
+    width: 45px;
+    height: 45px;
+  }
 }
