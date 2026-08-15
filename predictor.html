@@ -8,7 +8,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="textstyle.css">
 </head>
@@ -19,507 +21,529 @@
     </a>
 
     <header>
-   <header>
-        <div class="top-bar">
-            <div class="nav-left">
-                <a href="homepage.html">
-                    <img src="club-page-photos/logo.png"
-                        alt="logo" class="logo">
-                </a>
-                <div class="stack">
-                    <span class="site-title">FOOTBALL HUB</span>
-                    <span class="page-name">PREDICTION</span>
+        <header>
+            <div class="top-bar">
+                <div class="nav-left">
+                    <a href="homepage.html">
+                        <img src="club-page-photos/logo.png" alt="logo" class="logo">
+                    </a>
+                    <div class="stack">
+                        <span class="site-title">FOOTBALL HUB</span>
+                        <span class="page-name">PREDICTION</span>
+                    </div>
+                </div>
+
+                <div class="top-right">
+                    <button class="hamburger" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
 
-            <div class="top-right">
-                <button class="hamburger" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+            <nav class="bottom-bar">
+                <ul class="nav-list">
+                    <li class="dropdown">
+                        <div class="dropdown-hover-area">
+                            <button class="dropdown-button">CLUBS</button>
+                            <div class="dropdown-content">
+                                <div class="dropdown-inner">
+                                    <div class="grid-container">
+
+                                        <a href="barca.html">
+                                            <div class="club-logo-box">
+                                                <img src="club-page-photos/baranav.webp" alt="barcelona">
+                                            </div>
+                                            <span>BARCELONA</span>
+                                        </a>
+
+                                        <a href="madrid.html">
+                                            <div class="club-logo-box">
+                                                <img src="club-page-photos/realnav.png" alt="realmadrid">
+                                            </div>
+                                            <span>REAL MADRID</span>
+                                        </a>
+
+                                        <a href="liverpool.html">
+                                            <div class="club-logo-box">
+                                                <img src="club-page-photos/liverpoolnav.png" alt="liverpool">
+                                            </div>
+                                            <span>LIVERPOOL</span>
+                                        </a>
+
+                                        <a href="manutd.html">
+                                            <div class="club-logo-box">
+                                                <img src="club-page-photos/manunav.png" alt="manunited">
+                                            </div>
+                                            <span>MAN UNITED</span>
+                                        </a>
+
+                                        <a href="mancity.html">
+                                            <div class="club-logo-box">
+                                                <img src="club-page-photos/mancitynav.png" alt="mancity">
+                                            </div>
+                                            <span>MAN CITY</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <div class="dropdown-hover-area">
+                            <button class="dropdown-button">PREDICTION</button>
+                            <div class="dropdown-content">
+                                <div class="dropdown-inner">
+                                    <div class="prediction-nav-grid">
+                                        <a href="predictor.html#predictions" class="prediction-nav-link">
+                                            <img src="club-page-photos/matchpredic.jpg" alt="today predictions">
+                                            <span>TODAY'S PREDICTIONS</span>
+                                        </a>
+
+                                        <a href="predictor.html#featured-match" class="prediction-nav-link">
+                                            <img src="club-page-photos/featuredmatchnav.jpg" alt="featured match">
+                                            <span>FEATURED MATCH</span>
+                                        </a>
+
+                                        <a href="predictor.html#results" class="prediction-nav-link">
+                                            <img src="club-page-photos/results_nav.jpg" alt="recent results">
+                                            <span>RECENT RESULTS</span>
+                                        </a>
+
+                                        <a href="predictor.html#fan-form" class="prediction-nav-link">
+                                            <img src="club-page-photos/fanprediction_nav.jpg"
+                                                alt="share your prediction">
+                                            <span>SHARE YOUR PREDICTION</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <div class="dropdown-hover-area">
+                            <button class="dropdown-button">CONTACT US</button>
+                            <div class="dropdown-content">
+                                <div class="dropdown-inner">
+                                    <div class="grid-container2">
+                                        <a href="contactus.html">
+                                            <img src="club-page-photos/joinusnav.jpg" alt="join">
+                                            <span>ANY ENQUIRES? CONTACT US HERE</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <header class="hero" id="top">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-7 reveal-up">
+                        <span class="hero-badge">Fan Zone • Matchday Predictions</span>
+                        <h1>BIG GAMES. BOLD TAKES. REAL FAN ENERGY.</h1>
+                        <p>
+                            Welcome to the prediction page of Football Hub, where fans share scoreline guesses,
+                            featured match thoughts, and recent results all in one place.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <a href="#predictions" class="btn btn-main">View Predictions</a>
+                            <a href="#fan-form" class="btn btn-main">Submit Your Pick</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 reveal-up delay-1">
+                        <div class="hero-panel">
+                            <span class="score-pill">Weekend Watchlist</span>
+
+                            <div class="match-line">
+                                <div>
+                                    <div class="club-name">Liverpool vs Man City</div>
+                                    <small class="text-secondary">Premier League</small>
+                                </div>
+                                <div class="score-box">1 - 2</div>
+                            </div>
+
+                            <div class="match-line">
+                                <div>
+                                    <div class="club-name">Man United vs Liverpool</div>
+                                    <small class="text-secondary">Premier League</small>
+                                </div>
+                                <div class="score-box">3 - 2</div>
+                            </div>
+
+                            <div class="match-line">
+                                <div>
+                                    <div class="club-name">Barcelona vs Real Madrid</div>
+                                    <small class="text-secondary">La Liga</small>
+                                </div>
+                                <div class="score-box">1 - 2</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </header>
 
-        <nav class="bottom-bar">
-            <ul class="nav-list">
-                <li class="dropdown">
-                    <div class="dropdown-hover-area">
-                        <button class="dropdown-button">CLUBS</button>
-                        <div class="dropdown-content">
-                            <div class="dropdown-inner">
-                                <div class="grid-container">
-                                    
-                                    <a href="barca.html">
-                                        <div class="club-logo-box">
-                                            <img src="club-page-photos/baranav.webp"
-                                                alt="barcelona">
-                                        </div>
-                                        <span>BARCELONA</span>
-                                    </a>
-
-                                    <a href="madrid.html">
-                                        <div class="club-logo-box">
-                                            <img src="club-page-photos/realnav.png"
-                                                alt="realmadrid">
-                                        </div>
-                                        <span>REAL MADRID</span>
-                                    </a>
-
-                                    <a href="liverpool.html">
-                                        <div class="club-logo-box">
-                                            <img src="club-page-photos/liverpoolnav.png"
-                                                alt="liverpool">
-                                        </div>
-                                        <span>LIVERPOOL</span>
-                                    </a>
-
-                                    <a href="manutd.html">
-                                        <div class="club-logo-box">
-                                            <img src="club-page-photos/manunav.png"
-                                                alt="manunited">
-                                        </div>
-                                        <span>MAN UNITED</span>
-                                    </a>
-
-                                    <a href="mancity.html">
-                                        <div class="club-logo-box">
-                                            <img src="club-page-photos/mancitynav.png"
-                                                alt="mancity">
-                                        </div>
-                                        <span>MAN CITY</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="dropdown">
-                    <div class="dropdown-hover-area">
-                        <button class="dropdown-button">PREDICTION</button>
-                        <div class="dropdown-content">
-                            <div class="dropdown-inner">
-                                <div class="prediction-nav-grid">
-                                    <a href="predictor.html#predictions" class="prediction-nav-link">
-                                        <img src="club-page-photos/matchpredic.jpg" alt="today predictions">
-                                        <span>TODAY'S PREDICTIONS</span>
-                                    </a>
-
-                                    <a href="predictor.html#featured-match" class="prediction-nav-link">
-                                        <img src="club-page-photos/featuredmatchnav.jpg" alt="featured match">
-                                        <span>FEATURED MATCH</span>
-                                    </a>
-
-                                    <a href="predictor.html#results" class="prediction-nav-link">
-                                        <img src="club-page-photos/results_nav.jpg" alt="recent results">
-                                        <span>RECENT RESULTS</span>
-                                    </a>
-
-                                    <a href="predictor.html#fan-form" class="prediction-nav-link">
-                                        <img src="club-page-photos/fanprediction_nav.jpg" alt="share your prediction">
-                                        <span>SHARE YOUR PREDICTION</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="dropdown">
-                    <div class="dropdown-hover-area">
-                        <button class="dropdown-button">CONTACT US</button>
-                        <div class="dropdown-content">
-                            <div class="dropdown-inner">
-                                <div class="grid-container2">
-                                    <a href="contactus.html">
-                                        <img src="club-page-photos/joinusnav.jpg" alt="join">
-                                        <span>ANY ENQUIRES? CONTACT US HERE</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <header class="hero" id="top">
-        <div class="container">
-            <div class="row align-items-center g-4">
-                <div class="col-lg-7 reveal-up">
-                    <span class="hero-badge">Fan Zone • Matchday Predictions</span>
-                    <h1>BIG GAMES. BOLD TAKES. REAL FAN ENERGY.</h1>
-                    <p>
-                        Welcome to the prediction page of Football Hub, where fans share scoreline guesses,
-                        featured match thoughts, and recent results all in one place.
+        <main id="main-content">
+            <section id="predictions">
+                <div class="container">
+                    <div class="prediction-section-label reveal-up">Today’s Picks</div>
+                    <h2 class="prediction-section-title reveal-up delay-1">Match Predictions</h2>
+                    <p class="prediction-section-text reveal-up delay-2">
+                        Here are three fan-style predictions featuring the biggest fixtures from Football Hub’s
+                        selected clubs, each with a short football opinion to make the page feel lively and
+                        community-driven.
                     </p>
 
-                    <div class="hero-buttons">
-                        <a href="#predictions" class="btn btn-main">View Predictions</a>
-                        <a href="#fan-form" class="btn btn-main">Submit Your Pick</a>
+                    <div class="row g-4">
+                        <div class="col-md-6 col-xl-4">
+                            <article class="prediction-card reveal-up delay-1">
+                                <img src="club-page-photos/liverpoolvsmanc.jpg"
+                                    alt="Liverpool and Manchester City match preview">
+                                <div class="card-body">
+                                    <div class="fixture-meta">Saturday • 8:30 PM</div>
+                                    <h3>Liverpool 1 - 2 Man City</h3>
+                                    <p>
+                                        This feels like a tight title-level clash, but City’s control in possession and
+                                        ability to punish late mistakes give them the edge in a narrow win.
+                                    </p>
+                                    <div class="tag-row">
+                                        <span class="mini-tag">Big rivalry</span>
+                                        <span class="mini-tag">Late winner</span>
+                                        <span class="mini-tag">Possession edge</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-md-6 col-xl-4">
+                            <article class="prediction-card reveal-up delay-2">
+                                <img src="club-page-photos/manuvsliverp.jpg"
+                                    alt="Manchester United and Liverpool match preview">
+                                <div class="card-body">
+                                    <div class="fixture-meta">Sunday • 5:00 PM</div>
+                                    <h3>Man United 3 - 2 Liverpool</h3>
+                                    <p>
+                                        This looks like the kind of fast, emotional rivalry game where both sides create
+                                        chances, but United just about edge it in the closing stages.
+                                    </p>
+                                    <div class="tag-row">
+                                        <span class="mini-tag">High intensity</span>
+                                        <span class="mini-tag">End-to-end</span>
+                                        <span class="mini-tag">Rivalry drama</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-md-6 col-xl-4">
+                            <article class="prediction-card reveal-up delay-3">
+                                <img src="club-page-photos/baravsreal.jpg"
+                                    alt="Barcelona and Real Madrid match preview">
+                                <div class="card-body">
+                                    <div class="fixture-meta">Sunday • 9:15 PM</div>
+                                    <h3>Barcelona 1 - 2 Real Madrid</h3>
+                                    <p>
+                                        El Clasico is always tense and unpredictable, but Madrid’s sharp finishing and
+                                        big-game composure could be enough to settle another close contest.
+                                    </p>
+                                    <div class="tag-row">
+                                        <span class="mini-tag">El Clasico</span>
+                                        <span class="mini-tag">Close contest</span>
+                                        <span class="mini-tag">Big-match quality</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="col-lg-5 reveal-up delay-1">
-                    <div class="hero-panel">
-                        <span class="score-pill">Weekend Watchlist</span>
+            <section id="featured-match">
+                <div class="container">
+                    <div class="prediction-section-label reveal-up">Spotlight</div>
+                    <h2 class="prediction-section-title reveal-up delay-1">Featured Match</h2>
+                    <p class="prediction-section-text reveal-up delay-2">
+                        Use this section to highlight one high-interest game with an image and short analysis.
+                    </p>
 
-                        <div class="match-line">
-                            <div>
-                                <div class="club-name">Liverpool vs Man City</div>
-                                <small class="text-secondary">Premier League</small>
+                    <div class="featured-card reveal-up delay-1">
+                        <div class="row g-0 align-items-stretch">
+                            <div class="col-lg-6">
+                                <img src="club-page-photos/featured match.avif"
+                                    alt="Featured football stadium match scene">
                             </div>
-                            <div class="score-box">1 - 2</div>
-                        </div>
+                            <div class="col-lg-6">
+                                <div class="featured-copy">
+                                    <span class="hero-badge mb-3">Main Event</span>
+                                    <h3 class="mb-3">Liverpool vs Man City</h3>
+                                    <p class="featured-description">
+                                        This fixture stands out because both teams play with intensity, quality, and
+                                        big-match confidence. It is the kind of Premier League clash that football fans
+                                        love to debate before kickoff.
+                                    </p>
 
-                        <div class="match-line">
-                            <div>
-                                <div class="club-name">Man United vs Liverpool</div>
-                                <small class="text-secondary">Premier League</small>
-                            </div>
-                            <div class="score-box">3 - 2</div>
-                        </div>
-
-                        <div class="match-line">
-                            <div>
-                                <div class="club-name">Barcelona vs Real Madrid</div>
-                                <small class="text-secondary">La Liga</small>
-                            </div>
-                            <div class="score-box">1 - 2</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <main id="main-content">
-        <section id="predictions">
-            <div class="container">
-                <div class="prediction-section-label reveal-up">Today’s Picks</div>
-                <h2 class="prediction-section-title reveal-up delay-1">Match Predictions</h2>
-                <p class="prediction-section-text reveal-up delay-2">
-                    Here are three fan-style predictions featuring the biggest fixtures from Football Hub’s
-                    selected clubs, each with a short football opinion to make the page feel lively and
-                    community-driven.
-                </p>
-
-                <div class="row g-4">
-                    <div class="col-md-6 col-xl-4">
-                        <article class="prediction-card reveal-up delay-1">
-                            <img src="club-page-photos/liverpoolvsmanc.jpg"
-                                alt="Liverpool and Manchester City match preview">
-                            <div class="card-body">
-                                <div class="fixture-meta">Saturday • 8:30 PM</div>
-                                <h3>Liverpool 1 - 2 Man City</h3>
-                                <p>
-                                    This feels like a tight title-level clash, but City’s control in possession and
-                                    ability to punish late mistakes give them the edge in a narrow win.
-                                </p>
-                                <div class="tag-row">
-                                    <span class="mini-tag">Big rivalry</span>
-                                    <span class="mini-tag">Late winner</span>
-                                    <span class="mini-tag">Possession edge</span>
+                                    <ul class="featured-list">
+                                        <li>Liverpool can create pressure quickly with aggressive attacking play.</li>
+                                        <li>Man City usually control possession and punish small defensive mistakes.
+                                        </li>
+                                        <li>A 1 - 2 result feels realistic in a close, high-level contest.</li>
+                                    </ul>
                                 </div>
                             </div>
-                        </article>
+                        </div>
                     </div>
 
-                    <div class="col-md-6 col-xl-4">
-                        <article class="prediction-card reveal-up delay-2">
-                            <img src="club-page-photos/manuvsliverp.jpg"
-                                alt="Manchester United and Liverpool match preview">
-                            <div class="card-body">
-                                <div class="fixture-meta">Sunday • 5:00 PM</div>
-                                <h3>Man United 3 - 2 Liverpool</h3>
-                                <p>
-                                    This looks like the kind of fast, emotional rivalry game where both sides create
-                                    chances, but United just about edge it in the closing stages.
-                                </p>
-                                <div class="tag-row">
-                                    <span class="mini-tag">High intensity</span>
-                                    <span class="mini-tag">End-to-end</span>
-                                    <span class="mini-tag">Rivalry drama</span>
+                    <div class="row g-4 mt-2">
+                        <div class="col-md-4">
+                            <div class="stats-card reveal-up delay-1">
+                                <div class="stats-number">3</div>
+                                <div class="stats-label">Predictions shown</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="stats-card reveal-up delay-2">
+                                <div class="stats-number">1</div>
+                                <div class="stats-label">Featured rivalry</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="stats-card reveal-up delay-3">
+                                <div class="stats-number">100%</div>
+                                <div class="stats-label">Fan-made football content</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="results">
+                <div class="container">
+                    <div class="prediction-section-label reveal-up">Past Review</div>
+                    <h2 class="prediction-section-title reveal-up delay-1">Recent Results</h2>
+                    <p class="prediction-section-text reveal-up delay-2">
+                        This results table helps make the page feel like a real football prediction hub.
+                    </p>
+
+                    <div class="table-shell table-responsive reveal-up delay-1">
+                        <table class="table custom-table align-middle">
+                            <thead>
+                                <tr>
+                                    <th>Match</th>
+                                    <th>Predicted Score</th>
+                                    <th>Actual Score</th>
+                                    <th>Outcome</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Liverpool vs Man City</td>
+                                    <td>2 - 1</td>
+                                    <td>1 - 2</td>
+                                    <td><span class="badge-loss">Missed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Man United vs Liverpool</td>
+                                    <td>2 - 2</td>
+                                    <td>3 - 2</td>
+                                    <td><span class="badge-draw">Near Draw</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Liverpool vs Man United</td>
+                                    <td>1 - 1</td>
+                                    <td>1 - 2</td>
+                                    <td><span class="badge-win">Close Call</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Barcelona vs Real Madrid</td>
+                                    <td>2 - 1</td>
+                                    <td>2 - 0</td>
+                                    <td><span class="badge-win">Close Call</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Real Madrid vs Barcelona</td>
+                                    <td>1 - 1</td>
+                                    <td>2 - 1</td>
+                                    <td><span class="badge-loss">Missed</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section id="media">
+                <div class="container">
+                    <div class="prediction-section-label reveal-up">Multimedia</div>
+                    <h2 class="prediction-section-title reveal-up delay-1">Matchday Media</h2>
+                    <p class="prediction-section-text reveal-up delay-2">
+                        Watch a short stadium clip and listen to the crowd atmosphere below.
+                    </p>
+
+                    <div class="row g-4">
+                        <div class="col-lg-7">
+                            <div class="media-shell reveal-up delay-1">
+                                <h3 class="mb-2">Preview Video</h3>
+                                <p class="media-text">An iconic football crowd reaction that brings the stadium
+                                    atmosphere to life.</p>
+                                <div class="ratio ratio-16x9 mt-3">
+                                    <iframe
+                                        src="https://www.youtube.com/embed/ZcOmw4rDCQU?si=trCkI_l-xTjKQHhs&amp;start=12"
+                                        title="YouTube video player"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
                             </div>
-                        </article>
-                    </div>
+                        </div>
 
-                    <div class="col-md-6 col-xl-4">
-                        <article class="prediction-card reveal-up delay-3">
-                            <img src="club-page-photos/baravsreal.jpg"
-                                alt="Barcelona and Real Madrid match preview">
-                            <div class="card-body">
-                                <div class="fixture-meta">Sunday • 9:15 PM</div>
-                                <h3>Barcelona 1 - 2 Real Madrid</h3>
-                                <p>
-                                    El Clasico is always tense and unpredictable, but Madrid’s sharp finishing and
-                                    big-game composure could be enough to settle another close contest.
-                                </p>
-                                <div class="tag-row">
-                                    <span class="mini-tag">El Clasico</span>
-                                    <span class="mini-tag">Close contest</span>
-                                    <span class="mini-tag">Big-match quality</span>
+                        <div class="col-lg-5">
+                            <div class="media-shell reveal-up delay-2">
+                                <h3 class="mb-2">Crowd Audio</h3>
+                                <p class="media-text">Feel the energy of fans cheering from the stadium stands.</p>
+                                <audio controls>
+                                    <source src="club-page-photos/crowd cheer.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="fan-form">
+                <div class="container">
+                    <div class="prediction-section-label reveal-up">Community Input</div>
+                    <h2 class="prediction-section-title reveal-up delay-1">Share Your Prediction</h2>
+                    <p class="prediction-section-text reveal-up delay-2">
+                        This form lets users submit their own football guess for an upcoming featured fixture.
+                    </p>
+
+                    <div class="form-shell reveal-up delay-1">
+                        <form action="predictor_response.html" method="get" class="row g-4">
+                            <div class="col-md-6">
+                                <label for="fanName" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="fanName" name="fanName"
+                                    placeholder="Enter your name" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="matchChoice" class="form-label">Match to Predict</label>
+                                <select class="form-select" id="matchChoice" name="matchChoice" required>
+                                    <option value="">Choose a match</option>
+                                    <option>Barcelona vs Liverpool</option>
+                                    <option>Man City vs Real Madrid</option>
+                                    <option>Man United vs Barcelona</option>
+                                    <option>Real Madrid vs Liverpool</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="homeScore" class="form-label">Home Score</label>
+                                <input type="number" class="form-control" id="homeScore" name="homeScore" min="0"
+                                    max="10" placeholder="0" required>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="awayScore" class="form-label">Away Score</label>
+                                <input type="number" class="form-control" id="awayScore" name="awayScore" min="0"
+                                    max="10" placeholder="0" required>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="hero-buttons-submit">
+                                    <button type="submit" class="btn btn-main">Submit Prediction</button>
                                 </div>
                             </div>
-                        </article>
+                        </form>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
 
-        <section id="featured-match">
-            <div class="container">
-                <div class="prediction-section-label reveal-up">Spotlight</div>
-                <h2 class="prediction-section-title reveal-up delay-1">Featured Match</h2>
-                <p class="prediction-section-text reveal-up delay-2">
-                    Use this section to highlight one high-interest game with an image and short analysis.
-                </p>
+        <footer class="footer-bar">
+            <p>© 2026 Football Hub</p>
+        </footer>
 
-                <div class="featured-card reveal-up delay-1">
-                    <div class="row g-0 align-items-stretch">
-                        <div class="col-lg-6">
-                            <img src="club-page-photos/featured match.avif"
-                                alt="Featured football stadium match scene">
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="featured-copy">
-                                <span class="hero-badge mb-3">Main Event</span>
-                                <h3 class="mb-3">Liverpool vs Man City</h3>
-                                <p class="featured-description">
-                                    This fixture stands out because both teams play with intensity, quality, and
-                                    big-match confidence. It is the kind of Premier League clash that football fans
-                                    love to debate before kickoff.
-                                </p>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const hamburger = document.querySelector(".hamburger");
+                const bottomBar = document.querySelector(".bottom-bar");
+                const dropdownButtons = document.querySelectorAll(".dropdown-button");
 
-                                <ul class="featured-list">
-                                    <li>Liverpool can create pressure quickly with aggressive attacking play.</li>
-                                    <li>Man City usually control possession and punish small defensive mistakes.</li>
-                                    <li>A 1 - 2 result feels realistic in a close, high-level contest.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row g-4 mt-2">
-                    <div class="col-md-4">
-                        <div class="stats-card reveal-up delay-1">
-                            <div class="stats-number">3</div>
-                            <div class="stats-label">Predictions shown</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="stats-card reveal-up delay-2">
-                            <div class="stats-number">1</div>
-                            <div class="stats-label">Featured rivalry</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="stats-card reveal-up delay-3">
-                            <div class="stats-number">100%</div>
-                            <div class="stats-label">Fan-made football content</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="results">
-            <div class="container">
-                <div class="prediction-section-label reveal-up">Past Review</div>
-                <h2 class="prediction-section-title reveal-up delay-1">Recent Results</h2>
-                <p class="prediction-section-text reveal-up delay-2">
-                    This results table helps make the page feel like a real football prediction hub.
-                </p>
-
-                <div class="table-shell table-responsive reveal-up delay-1">
-                    <table class="table custom-table align-middle">
-                        <thead>
-                            <tr>
-                                <th>Match</th>
-                                <th>Predicted Score</th>
-                                <th>Actual Score</th>
-                                <th>Outcome</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Liverpool vs Man City</td>
-                                <td>2 - 1</td>
-                                <td>1 - 2</td>
-                                <td><span class="badge-loss">Missed</span></td>
-                            </tr>
-                            <tr>
-                                <td>Man United vs Liverpool</td>
-                                <td>2 - 2</td>
-                                <td>3 - 2</td>
-                                <td><span class="badge-draw">Near Draw</span></td>
-                            </tr>
-                            <tr>
-                                <td>Liverpool vs Man United</td>
-                                <td>1 - 1</td>
-                                <td>1 - 2</td>
-                                <td><span class="badge-win">Close Call</span></td>
-                            </tr>
-                            <tr>
-                                <td>Barcelona vs Real Madrid</td>
-                                <td>2 - 1</td>
-                                <td>2 - 0</td>
-                                <td><span class="badge-win">Close Call</span></td>
-                            </tr>
-                            <tr>
-                                <td>Real Madrid vs Barcelona</td>
-                                <td>1 - 1</td>
-                                <td>2 - 1</td>
-                                <td><span class="badge-loss">Missed</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-        <section id="media">
-            <div class="container">
-                <div class="prediction-section-label reveal-up">Multimedia</div>
-                <h2 class="prediction-section-title reveal-up delay-1">Matchday Media</h2>
-                <p class="prediction-section-text reveal-up delay-2">
-                    Watch a short stadium clip and listen to the crowd atmosphere below.
-                </p>
-
-                <div class="row g-4">
-                    <div class="col-lg-7">
-                        <div class="media-shell reveal-up delay-1">
-                            <h3 class="mb-2">Preview Video</h3>
-                            <p class="media-text">An iconic football crowd reaction that brings the stadium atmosphere to life.</p>
-                            <div class="ratio ratio-16x9 mt-3">
-                                <iframe src="https://www.youtube.com/embed/ZcOmw4rDCQU?si=trCkI_l-xTjKQHhs&amp;start=12"
-                                    title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-5">
-                        <div class="media-shell reveal-up delay-2">
-                            <h3 class="mb-2">Crowd Audio</h3>
-                            <p class="media-text">Feel the energy of fans cheering from the stadium stands.</p>
-                            <audio controls>
-                                <source src="club-page-photos/crowd cheer.mp3" type="audio/mpeg">
-                            </audio>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="fan-form">
-            <div class="container">
-                <div class="prediction-section-label reveal-up">Community Input</div>
-                <h2 class="prediction-section-title reveal-up delay-1">Share Your Prediction</h2>
-                <p class="prediction-section-text reveal-up delay-2">
-                    This form lets users submit their own football guess for an upcoming featured fixture.
-                </p>
-
-                <div class="form-shell reveal-up delay-1">
-                    <form action="predictor_response.html" method="get" class="row g-4">
-                        <div class="col-md-6">
-                            <label for="fanName" class="form-label">Your Name</label>
-                            <input type="text" class="form-control" id="fanName" name="fanName"
-                                placeholder="Enter your name" required>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label for="matchChoice" class="form-label">Match to Predict</label>
-                            <select class="form-select" id="matchChoice" name="matchChoice" required>
-                                <option value="">Choose a match</option>
-                                <option>Barcelona vs Liverpool</option>
-                                <option>Man City vs Real Madrid</option>
-                                <option>Man United vs Barcelona</option>
-                                <option>Real Madrid vs Liverpool</option>
-                            </select>
-                        </div>
-
-                        <div class="col-md-3">
-                            <label for="homeScore" class="form-label">Home Score</label>
-                            <input type="number" class="form-control" id="homeScore" name="homeScore" min="0" max="10"
-                                placeholder="0" required>
-                        </div>
-
-                        <div class="col-md-3">
-                            <label for="awayScore" class="form-label">Away Score</label>
-                            <input type="number" class="form-control" id="awayScore" name="awayScore" min="0" max="10"
-                                placeholder="0" required>
-                        </div>
-
-                        <div class="col-12">
-                            <div class="hero-buttons-submit">
-                                <button type="submit" class="btn btn-main">Submit Prediction</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-  <footer class="footer-bar">
-    <p>© 2026 Football Hub</p>
-  </footer>
-
-    <script>
-        const predictionLinks = document.querySelectorAll(".prediction-nav-link");
-        const dropdowns = document.querySelectorAll(".dropdown");
-        const bottomBar = document.querySelector(".bottom-bar");
-
-        predictionLinks.forEach((link) => {
-            link.addEventListener("click", function () {
-                const currentDropdown = this.closest(".dropdown");
-
-                if (currentDropdown) {
-                    currentDropdown.classList.add("force-hide");
+                if (hamburger && bottomBar) {
+                    hamburger.addEventListener("click", function () {
+                        bottomBar.classList.toggle("active");
+                    });
                 }
 
-                dropdowns.forEach((dropdown) => {
-                    dropdown.classList.remove("active");
+                dropdownButtons.forEach(function (button) {
+                    button.addEventListener("click", function (e) {
+                        e.preventDefault();
+
+                        const dropdownArea = button.closest(".dropdown-hover-area");
+                        if (!dropdownArea) return;
+
+                        const dropdownContent = dropdownArea.querySelector(".dropdown-content");
+                        if (!dropdownContent) return;
+
+                        dropdownContent.classList.toggle("active");
+                    });
                 });
+            });
+            const predictionLinks = document.querySelectorAll(".prediction-nav-link");
+            const dropdowns = document.querySelectorAll(".dropdown");
+            const bottomBar = document.querySelector(".bottom-bar");
 
-                if (bottomBar) {
-                    bottomBar.classList.remove("active");
-                }
+            predictionLinks.forEach((link) => {
+                link.addEventListener("click", function () {
+                    const currentDropdown = this.closest(".dropdown");
 
-                setTimeout(() => {
                     if (currentDropdown) {
-                        currentDropdown.classList.remove("force-hide");
+                        currentDropdown.classList.add("force-hide");
                     }
-                }, 600);
+
+                    dropdowns.forEach((dropdown) => {
+                        dropdown.classList.remove("active");
+                    });
+
+                    if (bottomBar) {
+                        bottomBar.classList.remove("active");
+                    }
+
+                    setTimeout(() => {
+                        if (currentDropdown) {
+                            currentDropdown.classList.remove("force-hide");
+                        }
+                    }, 600);
+                });
             });
-        });
-    </script>
 
-    <script>
-        const revealItems = document.querySelectorAll('.reveal-up');
+            const revealItems = document.querySelectorAll('.reveal-up');
 
-        const revealObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
-                    observer.unobserve(entry.target);
-                }
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.15
             });
-        }, {
-            threshold: 0.15
-        });
 
-        revealItems.forEach((item) => {
-            revealObserver.observe(item);
-        });
-    </script>
+            revealItems.forEach((item) => {
+                revealObserver.observe(item);
+            });
+        </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

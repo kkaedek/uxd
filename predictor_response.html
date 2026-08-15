@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prediction Submitted | Football Hub</title>
   <link rel="stylesheet" href="textstyle.css">
 </head>
+
 <body>
 
   <section class="response-page">
@@ -43,6 +45,32 @@
   </section>
 
   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburger = document.querySelector(".hamburger");
+      const bottomBar = document.querySelector(".bottom-bar");
+      const dropdownButtons = document.querySelectorAll(".dropdown-button");
+
+      if (hamburger && bottomBar) {
+        hamburger.addEventListener("click", function () {
+          bottomBar.classList.toggle("active");
+        });
+      }
+
+      dropdownButtons.forEach(function (button) {
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const dropdownArea = button.closest(".dropdown-hover-area");
+          if (!dropdownArea) return;
+
+          const dropdownContent = dropdownArea.querySelector(".dropdown-content");
+          if (!dropdownContent) return;
+
+          dropdownContent.classList.toggle("active");
+        });
+      });
+    });
+
     const params = new URLSearchParams(window.location.search);
 
     document.getElementById("displayName").textContent =
@@ -58,4 +86,5 @@
       params.get("awayScore") || "Not provided";
   </script>
 </body>
+
 </html>

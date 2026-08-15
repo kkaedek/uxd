@@ -10,18 +10,16 @@
         href="https://github.com/user-attachments/assets/218f55f4-4a5a-4626-b4f0-00ba42760d43">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="eldrickcss.css">
     <link rel="stylesheet" href="textstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-   <header>
+    <header>
         <div class="top-bar">
             <div class="nav-left">
                 <a href="homepage.html">
-                    <img src="club-page-photos/logo.png"
-                        alt="logo" class="logo">
+                    <img src="club-page-photos/logo.png" alt="logo" class="logo">
                 </a>
                 <div class="stack">
                     <span class="site-title">FOOTBALL HUB</span>
@@ -46,43 +44,38 @@
                         <div class="dropdown-content">
                             <div class="dropdown-inner">
                                 <div class="grid-container">
-                                    
+
                                     <a href="barca.html">
                                         <div class="club-logo-box">
-                                            <img src="club-page-photos/baranav.webp"
-                                                alt="barcelona">
+                                            <img src="club-page-photos/baranav.webp" alt="barcelona">
                                         </div>
                                         <span>BARCELONA</span>
                                     </a>
 
                                     <a href="madrid.html">
                                         <div class="club-logo-box">
-                                            <img src="club-page-photos/realnav.png"
-                                                alt="realmadrid">
+                                            <img src="club-page-photos/realnav.png" alt="realmadrid">
                                         </div>
                                         <span>REAL MADRID</span>
                                     </a>
 
                                     <a href="liverpool.html">
                                         <div class="club-logo-box">
-                                            <img src="club-page-photos/liverpoolnav.png"
-                                                alt="liverpool">
+                                            <img src="club-page-photos/liverpoolnav.png" alt="liverpool">
                                         </div>
                                         <span>LIVERPOOL</span>
                                     </a>
 
                                     <a href="manutd.html">
                                         <div class="club-logo-box">
-                                            <img src="club-page-photos/manunav.png"
-                                                alt="manunited">
+                                            <img src="club-page-photos/manunav.png" alt="manunited">
                                         </div>
                                         <span>MAN UNITED</span>
                                     </a>
 
                                     <a href="mancity.html">
                                         <div class="club-logo-box">
-                                            <img src="club-page-photos/mancitynav.png"
-                                                alt="mancity">
+                                            <img src="club-page-photos/mancitynav.png" alt="mancity">
                                         </div>
                                         <span>MAN CITY</span>
                                     </a>
@@ -207,8 +200,9 @@
     <section class="club-section">
 
         <div class="about-club-image">
-            <a href="https://shop.realmadrid.com/en/products/rmcfmz0942-mens-home-authentic-shirt-26-27-white?player=Mbappé&variant=61920284868938">
-            <img src="club-page-photos/madridstarplayer.jpg" alt="Star Player">
+            <a
+                href="https://shop.realmadrid.com/en/products/rmcfmz0942-mens-home-authentic-shirt-26-27-white?player=Mbappé&variant=61920284868938">
+                <img src="club-page-photos/madridstarplayer.jpg" alt="Star Player">
             </a>
         </div>
         <div class="club-text">
@@ -257,6 +251,32 @@
         crossorigin="anonymous"></script>
 
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const bottomBar = document.querySelector(".bottom-bar");
+            const dropdownButtons = document.querySelectorAll(".dropdown-button");
+
+            if (hamburger && bottomBar) {
+                hamburger.addEventListener("click", function () {
+                    bottomBar.classList.toggle("active");
+                });
+            }
+
+            dropdownButtons.forEach(function (button) {
+                button.addEventListener("click", function (e) {
+                    e.preventDefault();
+
+                    const dropdownArea = button.closest(".dropdown-hover-area");
+                    if (!dropdownArea) return;
+
+                    const dropdownContent = dropdownArea.querySelector(".dropdown-content");
+                    if (!dropdownContent) return;
+
+                    dropdownContent.classList.toggle("active");
+                });
+            });
+        });
+
         const sections = document.querySelectorAll(".club-section");
 
         const observer = new IntersectionObserver((entries) => {

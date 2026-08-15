@@ -54,6 +54,32 @@
   </section>
 
   <script>
+        document.addEventListener("DOMContentLoaded", function () {
+      const hamburger = document.querySelector(".hamburger");
+      const bottomBar = document.querySelector(".bottom-bar");
+      const dropdownButtons = document.querySelectorAll(".dropdown-button");
+
+      if (hamburger && bottomBar) {
+        hamburger.addEventListener("click", function () {
+          bottomBar.classList.toggle("active");
+        });
+      }
+
+      dropdownButtons.forEach(function (button) {
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const dropdownArea = button.closest(".dropdown-hover-area");
+          if (!dropdownArea) return;
+
+          const dropdownContent = dropdownArea.querySelector(".dropdown-content");
+          if (!dropdownContent) return;
+
+          dropdownContent.classList.toggle("active");
+        });
+      });
+    });
+    
     document.getElementById("displayName").textContent =
       localStorage.getItem("name") || "Not provided";
 
